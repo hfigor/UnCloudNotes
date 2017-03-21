@@ -57,6 +57,7 @@ class CoreDataStack {
     
     let sqliteFilePath = storePath
       .appendingPathComponent(storeName + ".sqlite")
+    print("CoreDataPath: \(sqliteFilePath)")
     return URL(fileURLWithPath: sqliteFilePath)
   }
   
