@@ -32,6 +32,7 @@ class Note: NSManagedObject {
   @NSManaged var attachments: Set<Attachment>?
   
   
+  
   var  latestAttachment: Attachment? {
     guard let attachments = attachments,
     let startingAttachment = attachments.first else {
